@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+}
 
 nav {
   display: flex;
@@ -25,6 +28,7 @@ ul {
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
+  border-radius: 8px;
 }
 
 a {
@@ -33,41 +37,32 @@ a {
 }
 
 header {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0,0,0,.55),
-      rgba(0,0,0,.55)
-    ),
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
     linear-gradient(
       to right,
-      rgba(0,0,0,.60) 0%,
-      rgba(0,0,0,.45) 50%,
-      rgba(0,0,0,.15) 100%
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.45) 50%,
+      rgba(0, 0, 0, 0.15) 100%
     ),
-    linear-gradient(
-      180deg,
-      rgba(0,0,0,.15),
-      rgba(0,0,0,.45)
-    ), url('./B14-A01-DevConf-2026/assets/banner.jpg');
+    linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.45)),
+    url("./B14-A01-DevConf-2026/assets/banner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
 
-display: flex;
-justify-content: flex-start;
-flex-direction: column;
-align-items: center;
-
-
-text-align: center;
-padding-top: 65px;
+  text-align: center;
+  padding-top: 65px;
 }
 
 .hero {
-    position: relative;
-    height: 550px;
+  position: relative;
+  height: 550px;
 }
 
 .hero-text {
@@ -76,20 +71,75 @@ padding-top: 65px;
 .hero-text h1 {
   font-size: 3.5rem;
   margin-bottom: 16px;
-  font-family: 'Inter' sans-serif;
+  font-family: "Inter" sans-serif;
   font-weight: 700;
   color: white;
-  
 }
 
 .hero-text p {
   font-size: 1rem;
   line-height: 24px;
-  font-family: 'Inter';
+  font-family: "Inter";
   color: white;
   text-align: center;
 }
 
 .hero .register-button {
-    margin-top: 230px;
+  margin-top: 230px;
+}
+
+.speakers h2 {
+  text-align: center;
+  margin-top: 0.8%;
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+.speakers {
+  padding: 80px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.category {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card-content h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.designation {
+  font-size: 14px;
 }
