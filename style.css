@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 60px;
+  margin: 24 px auto;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.register-button {
+  background-color: #1d4ed8;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #575757;
+}
