@@ -16,7 +16,7 @@ nav {
   margin: 24px auto;
 }
 
-ul {
+nav ul {
   display: flex;
   list-style-type: none;
   gap: 1rem;
@@ -112,7 +112,7 @@ header {
 }
 
 .card {
-  background-color: #ffffff;
+  background-color: #F8F9FB;
   border-radius: 10px;
   border: 1px solid #e0e0e0;
   overflow: hidden;
@@ -142,4 +142,133 @@ header {
 
 .designation {
   font-size: 14px;
+}
+
+.pricing-section {
+    padding: 72px 24px
+}
+
+.pricing-section h2 {
+   
+  text-align: center;
+  margin-top: 0.8%;
+  font-size: 40px;
+  margin-bottom: 50px;
+  line-height: 1.2;
+}
+
+.pricing-section p {
+  font-size: 14px;
+  text-align: center;
+
+  }
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.pricing-card {
+ display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    height:420px;
+    width:210px;
+  margin:0px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+.pricinhg-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.plan-name {
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.pricing-card h3 {
+  font-size: 34px;
+  margin-bottom: 3px;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.price-note {
+  font-size: 12px;  
+}
+
+.divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 20px 0;
+}
+
+.feature-list {
+  position: relative;
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.feature-list li {
+  position: relative;
+  margin-bottom: 11px;
+  padding-left: 14px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.pricing-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature-list li::before{
+    content:".";
+    position:absolute;
+    left: 0;
+    color: #111827;
+    size: 20px;
+    font-weight: 700;
+}
+.pricing-button {
+  width: 100%;
+  margin-top: auto;
+  padding: 12px 16px;
+border: 1px solid #1a4ec0;
+  border-radius: 6px;
+  
+  background-color: transparent;
+  color: #111827;
+
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pricing-card-pro {
+    background-color: #0D1B2A;
+    border-color: #1d4ed8;}
+
+    .pricing-card-pro .plan-name,
+    .pricing-card-pro h3, .pricing-card-pro .price-note, .pricing-card-pro .feature-list li 
+  {color: #ffffff;}
+
+  .pricing-card-pro .divider {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.pro-button {
+  background-color: #0d4ace;
+  color: #ffffff;
+  border-color: #0c3ca3;
 }
