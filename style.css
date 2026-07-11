@@ -273,7 +273,7 @@ border: 1px solid #1a4ec0;
   border-color: #0c3ca3;
 }
 
-<!-- FAQ'Sectionsdn -->
+<!-- FAQ-->
 
 .booking-questions {
   padding: 80px 20px;
@@ -329,7 +329,7 @@ border: 1px solid #1a4ec0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-<!-- 'style each question card-->
+<!--style each question card-->
 
 .question-card h3 {
   margin-bottom: 12px;
@@ -380,10 +380,9 @@ border: 1px solid #1a4ec0;
 
 <!--To-make-mobile-friendly-->
 
-.media (max-width: 700px) {
-  .booking-questions {
+-@media (max-width: 700px) 
+  .booking-questions 
     padding: 55px 16px;
-  }
 
   .questions-grid {
     grid-template-columns: 1fr;
@@ -396,7 +395,7 @@ border: 1px solid #1a4ec0;
   .question-card {
     padding: 22px;
   }
-}
+
 
 
 
