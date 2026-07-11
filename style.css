@@ -272,3 +272,138 @@ border: 1px solid #1a4ec0;
   color: #ffffff;
   border-color: #0c3ca3;
 }
+
+<!-- FAQ'Sectionsdn -->
+
+.booking-questions {
+  padding: 80px 20px;
+  background-color: #f7f5ff;
+}
+
+.booking-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.booking-heading {
+  max-width: 650px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.section-label {
+  margin-bottom: 10px;
+  color: #6c4cff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.booking-heading h2 {
+  margin-bottom: 12px;
+  color: #101828;
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.section-description {
+  color: #667085;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+<!--Creating the two column jsection Layout-->
+
+.questions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.question-card {
+  padding: 28px;
+  background-color: #ffffff;
+  border: 1px solid #e4e7ec;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+<!-- 'style each question card-->
+
+.question-card h3 {
+  margin-bottom: 12px;
+  color: #101828;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.question-card p {
+  margin: 0;
+  color: #667085;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+<!--adding-hover-effect-->
+.question-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(16, 24, 40, 0.08);
+}
+<!--Style-the-contact-area-->
+
+.booking-contact {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.booking-contact p {
+  margin-bottom: 14px;
+  color: #344054;
+  font-weight: 600;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 12px 22px;
+  color: #ffffff;
+  background-color: #2457e6;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #1743bd;
+}
+
+<!--To-make-mobile-friendly-->
+
+.media (max-width: 700px) {
+  .booking-questions {
+    padding: 55px 16px;
+  }
+
+  .questions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-heading h2 {
+    font-size: 28px;
+  }
+
+  .question-card {
+    padding: 22px;
+  }
+}
+
+
+
+.footer{
+    background-color: #0D1B2A;
+}
+
+.footer p{
+    color: rgb(121, 120, 120);
+}
